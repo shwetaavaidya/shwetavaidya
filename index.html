@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+Show quoted text
+</head>
+<body>
+<div class="mdiv" >
+<div class="container" align="center">
+<form>
+<div>
+<input type="text" name="op" disabled="op">
+
+</div>
+<div>
+<input type="button" name="clr" value="C" onclick="op.value=' ' "/>
+<input type="button" name="alcr" value="AC" onclick="op.value=' ' "/>
+<input type="button" name="div" value="/" onclick="op.value='/' " class="opr"/>
+<input type="button" name="mod" value="%" onclick="op.value='%' "class="opr"/>
+
+
+</div>
+<div>
+<input type="button" name="num" value="9" onclick="op.value+='9'"/>
+<input type="button" name="num" value="8" onclick="op.value+='8'"/>
+<input type="button" name="num" value="7" onclick="op.value+='7'"/>
+<input type="button" name="num" value="+" onclick="op.value+='+'"class="opr"/>
+
+</div>
+<div>
+<input type="button" name="num" value="6" onclick="op.value+='6'"/>
+<input type="button" name="num" value="5" onclick="op.value+='5'"/>
+<input type="button" name="num" value="4" onclick="op.value+='4'"/>
+<input type="button" name="num" value="-" onclick="op.value+='-'"class="opr"/>
+</div>
+<div>
+<input type="button" name="num" value="3" onclick="op.value+='3'"/>
+<input type="button" name="num" value="2" onclick="op.value+='2'"/>
+<input type="button" name="num" value="1" onclick="op.value+='1'"/>
+
+</div>
+<div>
+<input type="button" name="num" value="0" onclick="op.value+='0'"/>
+<input type="button" name="num" value="." onclick="op.value+='.'"/>
+<input type="button" name="num" value="=" onclick="op.value=eval(op.value)" class="opr" />
+</div>
+</div>
+</div></form>
+
+</body>
+</html>
